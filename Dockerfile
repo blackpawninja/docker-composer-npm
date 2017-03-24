@@ -25,7 +25,8 @@ RUN curl -sS https://getcomposer.org/installer \
 	
 # Install Node & NPM
 RUN curl -sL https://deb.nodesource.com/setup_6.x \
-	| -E bash - \
+			-o nodesource_setup.sh \
+	&& bash nodesource_setup.sh \
 	&& apt-get -y install nodejs
 	
 
