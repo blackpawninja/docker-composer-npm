@@ -7,7 +7,8 @@ ENV COMPOSER_NO_INTERACTION 1
 # Install tools
 RUN apt-get update \
 	&& apt-get -y install zip unzip \
-		git build-essential curl
+		git build-essential curl \
+		software-properties-common \ python-software-properties
 
 # Install PHP
 RUN add-apt-repository ppa:ondrej/php \
