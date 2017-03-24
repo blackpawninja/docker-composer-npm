@@ -14,7 +14,8 @@ RUN apt-get update \
 RUN add-apt-repository ppa:ondrej/php \
 	&& apt-get update \
 	&& apt-get -y --allow-unauthenticated install \
-	    php7.0-cli php7.0-mbstring
+	    php7.0-cli php7.0-mbstring php7.0-xml \
+		php7.0-mcrypt php7.0-curl
 	
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer \
