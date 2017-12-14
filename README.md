@@ -1,8 +1,8 @@
-#Dockerfile intended for CI
+#Dockerfile intended for Bitbucket Pipeline and possibly other CI
 
 Based on `ubuntu:xenial`
 
 With
-- `PHP CLI` 7.0.x from `ppa:ondrej/php`
+- `PHP CLI` 7.1.x from `ppa:ondrej/php`
 - `Composer` latest from `getcomposer.org`
-- `Node` 6.x with `npm` from `deb.nodesource.com`
+- `Node` 8.x with `npm` from `deb.nodesource.com`

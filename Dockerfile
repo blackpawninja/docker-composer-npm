@@ -11,7 +11,7 @@ RUN apt-get update \
 		software-properties-common
 
 # Install PHP
-RUN add-apt-repository ppa:ondrej/php \
+RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php \
 	&& apt-get update \
 	&& apt-get -y --allow-unauthenticated install \
 	    php7.1-cli php7.1-mbstring php7.1-xml \
