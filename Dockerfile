@@ -14,8 +14,8 @@ RUN apt-get update \
 RUN add-apt-repository ppa:ondrej/php \
 	&& apt-get update \
 	&& apt-get -y --allow-unauthenticated install \
-	    php7.0-cli php7.0-mbstring php7.0-xml \
-		php7.0-mcrypt php7.0-curl
+	    php7.1-cli php7.1-mbstring php7.1-xml \
+		php7.1-mcrypt php7.1-curl
 	
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer \
@@ -25,7 +25,7 @@ RUN curl -sS https://getcomposer.org/installer \
 		--filename=composer
 	
 # Install Node & NPM
-RUN curl -sL https://deb.nodesource.com/setup_6.x \
+RUN curl -sL https://deb.nodesource.com/setup_8.x \
 			-o nodesource_setup.sh \
 	&& bash nodesource_setup.sh \
 	&& apt-get -y install nodejs
